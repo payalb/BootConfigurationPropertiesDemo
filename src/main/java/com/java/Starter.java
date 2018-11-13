@@ -16,7 +16,9 @@ public class Starter {
 		ConfigProperties p1= context.getBean(ConfigProperties.class);
 		MyappProperties  p2= context.getBean(MyappProperties.class);
 		System.out.println(p1.getFirstName());
+		System.out.println(p2.getLevel());
 		System.out.println(p2.getFirstName());
+		System.out.println(p1.getLog().getDebug().getLevel());
 	}
 
 }

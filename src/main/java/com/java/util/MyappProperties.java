@@ -7,11 +7,13 @@ import org.springframework.stereotype.Component;
 @Component
 @PropertySource("classpath:myapp.properties")
 public class MyappProperties {
-
-	@Value("${first-name}")
+	
+	@Value("${app.first-name}")
 	private String firstName;
-	@Value("${last-name}")
+	@Value("${app.last-name}")
 	private String lastName;
+	@Value("${app.log.debug.level}")
+	private String level;
 	public String getFirstName() {
 		return firstName;
 	}
@@ -23,5 +25,11 @@ public class MyappProperties {
 	}
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
+	}
+	public String getLevel() {
+		return level;
+	}
+	public void setLevel(String level) {
+		this.level = level;
 	}
 }
