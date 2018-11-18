@@ -1,0 +1,14 @@
+Spring boot property”
+ 
+ 
+ 
+ 
+
+Providing value for it as argument
+ 
+Adding actuator:
+ 
+ 
+export SERVER_PORT=9000
+Relaxed Binding:
+ 
